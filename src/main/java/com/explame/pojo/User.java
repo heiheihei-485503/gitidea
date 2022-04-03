@@ -3,6 +3,7 @@ package com.explame.pojo;
 import java.util.Objects;
 
 //第一版
+//第2版
 public class User {
     private Integer age;
     private String uname;
