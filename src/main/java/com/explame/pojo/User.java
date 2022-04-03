@@ -1,5 +1,7 @@
 package com.explame.pojo;
 
+import java.util.Objects;
+
 public class User {
     private Integer age;
     private String uname;
@@ -18,5 +20,18 @@ public class User {
 
     public void setUname(String uname) {
         this.uname = uname;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return Objects.equals(age, user.age) && Objects.equals(uname, user.uname);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(age, uname);
     }
 }
