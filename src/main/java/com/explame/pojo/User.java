@@ -1,7 +1,7 @@
 package com.explame.pojo;
 
 import java.util.Objects;
-
+//e236ee6b3c9ad1b74c52f72d831bb11162f83e2d
 public class User {
     private Integer age;
     private String uname;
@@ -33,5 +33,13 @@ public class User {
     @Override
     public int hashCode() {
         return Objects.hash(age, uname);
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "age=" + age +
+                ", uname='" + uname + '\'' +
+                '}';
     }
 }
